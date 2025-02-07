@@ -1,0 +1,74 @@
+.map-wrapper {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.map-title {
+  font-size: 24px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px; 
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.location-srch{
+  padding:10px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.location-srch:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 400px;
+  }
+
+  .search-box input {
+    width: 180px;
+  }
+}

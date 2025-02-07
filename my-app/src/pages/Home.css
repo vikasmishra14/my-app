@@ -1,0 +1,88 @@
+/* Home Page Styling */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    color: white;
+    text-align: center;
+    animation: background-fade 10s infinite alternate;
+  }
+  
+  /* Main Content */
+  .content {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Header Animation */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out forwards;
+  }
+  
+  /* Paragraph Animation */
+  p {
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: slide-up 1.5s ease-in-out forwards 0.5s;
+  }
+  
+  /* Explore Button */
+  .explore-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    background: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .explore-btn:hover {
+    background: #0056b3;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Background Animation */
+  @keyframes background-fade {
+    0% { background: linear-gradient(to right, #007bff, #00d4ff); }
+    100% { background: linear-gradient(to right, #00d4ff, #007bff); }
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Slide-Up Animation */
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .explore-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

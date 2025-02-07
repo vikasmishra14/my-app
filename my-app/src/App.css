@@ -1,0 +1,4 @@
+/* Add padding to body to avoid overlap */
+body {
+  padding-top: 70px; /* Adjust this value based on the navbar height */
+}

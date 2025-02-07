@@ -1,0 +1,32 @@
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-top: 3px solid #0056b3;
+    position: relative;
+    width: 100%; 
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

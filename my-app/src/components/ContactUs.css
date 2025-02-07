@@ -1,0 +1,109 @@
+  
+.contact-wrapper {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contact Form Container */
+.contact-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  width: 92%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+input:focus,
+textarea:focus {
+  border-color: #66a6ff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(102, 166, 255, 0.6);
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #66a6ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Error Messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  font-size: 16px;
+  margin-bottom: 10px;
+  animation: fadeInContact 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInContact {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .contact-container {
+    width: 90%;
+  }
+}
